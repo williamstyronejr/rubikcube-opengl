@@ -11,15 +11,16 @@ Download and install [CMake](http://www.cmake.org/cmake/resources/software.html)
 
 
 #### Linux 
-##### CMake
-    sudo apt-get install cmake 
+##### CMake, xOrg, Mesa
+    sudo apt-get install cmake xorg-dev libgl1-mesa-dev
     
 #### MacOS
 ##### CMake
 Download and install [CMake](http://www.cmake.org/cmake/resources/software.html).
 
 ### Compile and Run
-    git clone https://github.com/williamstyronejr/rubikcube-opengl.git --recursive
+    git clone https://github.com/williamstyronejr/rubikcube-opengl.git -recursive
     cd rubikcube-opengl
     cmake .
-    ./main
+    make .
+    ./bin/main
