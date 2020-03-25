@@ -1,25 +1,32 @@
 # Rubik Cube 
 A cross-platform app of a playable rubik cube using C++ and OpenGL.
 
-## Build Steps
+## Install Dependencies
 
-### Install dependencies
+### Windows
+Download and install [Visual Studios](https://visualstudio.microsoft.com/downloads/), or install [MinGW](http://www.mingw.org/) and add `C:/MinGW/bin` to your `Path`.
 
-#### Windows
-##### CMake
 Download and install [CMake](http://www.cmake.org/cmake/resources/software.html).
 
+### Linux 
+Run the following commands to install g++ using build-essential, CMake:
 
-#### Linux 
-##### CMake, xOrg, Mesa
-    sudo apt-get install cmake xorg-dev libgl1-mesa-dev
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install build-essential cmake xorg-dev libgl1-mesa-dev
     
-#### MacOS
-##### CMake
+### MacOS
+
+#### C++ Compiler
+Download XCode from the app store.
+   
+#### CMake
 Download and install [CMake](http://www.cmake.org/cmake/resources/software.html).
 
-### Compile and Run
-    git clone https://github.com/williamstyronejr/rubikcube-opengl.git -recursive
+## Running Application
+Run the following commands to clone, build, and run the application.
+
+    git clone https://github.com/williamstyronejr/rubikcube-opengl.git --recursive
     cd rubikcube-opengl
     cmake .
     make .
